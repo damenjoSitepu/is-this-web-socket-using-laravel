@@ -21,3 +21,7 @@ Route::get("/hit-me-senpai",function() {
     event(new \App\Events\SenpaiEvent());
     return null;
 });
+
+Route::get("/visit-me-senpai",function() {
+    return view("websockets");
+});

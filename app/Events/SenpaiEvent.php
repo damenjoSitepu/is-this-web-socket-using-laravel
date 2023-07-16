@@ -42,4 +42,14 @@ class SenpaiEvent implements ShouldBroadcast
     public function broadcastAs() {
         return "senpai-ah";
     }
+
+    /**
+     * Broadcast with returned data
+     */
+    public function broadcastWith()
+    {
+        return [
+            'user' => 'Damenjo Sitepu'
+        ];
+    }
 }
