@@ -7,7 +7,11 @@
     <title>Web Sockets</title>
 </head>
 <body>
-    
+    <form id="onSubmitMessage">
+        <label for="newMessage">Message</label>
+        <input id="messageInput" type="text" name="message">
+    </form>
+        
     @vite('resources/js/app.js')
 </body>
 </html>

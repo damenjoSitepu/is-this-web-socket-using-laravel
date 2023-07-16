@@ -22,6 +22,11 @@ Route::get("/hit-me-senpai",function() {
     return null;
 });
 
+Route::post("/message-me-senpai",function(\Illuminate\Http\Request $request) {
+    event(new \App\Events\MessageMeSenpaiEvent($request->message));
+    return null;
+});
+
 Route::get("/visit-me-senpai",function() {
     return view("websockets");
 });
